@@ -53,8 +53,11 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     display: flex;
 }
+.navigation .menu .blank{
+    flex: 0 0 20%;
+}
 .navigation .menu .logo{
-    flex: 0 0 100%;
+    flex: 0 0 60%;
 }
 .navigation .menu .bars{
     flex: 0 0 20%;
