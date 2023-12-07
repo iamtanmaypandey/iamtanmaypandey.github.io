@@ -152,6 +152,23 @@ h6 {
     animation: border-flicker 2s linear infinite;
 }
 
+.codehref{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: var(--glow-color);
+    border: 0.15em solid var(--glow-color);
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
+    width: fit-content;
+}
+
 .code .b img {
     width: 100px;
     padding-top: 40px;
@@ -191,7 +208,7 @@ h6 {
 .codebox {
     background-color: #F8B500;
     border-radius: 12px;
-    height: 200px;
+    height: 300px;
     max-width: 50%;
     box-shadow: 1px 3px 18px 0 rgba(#222, 0.5);
     background:url('../images/programmer-doing-simulation-removebg-preview.png') 60%, #734cff 40%;
@@ -302,7 +319,6 @@ h6 {
 .boxed .roads {
     flex: 0 0 20%;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
     background-image: url('../images/forest-snow-capped-mountains.png');
     background-size:cover;
     background-repeat: no-repeat;
@@ -378,3 +394,33 @@ h6 {
     font-size: 15px;
 }
 .education .education-box ul{border-left: 2px solid #F8B500;}
+.flex{
+    display: flex;
+}
+.flex-4{
+    flex: 0 0 25%;
+    background-color: #00ca56;
+}
+.skill{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border:2px solid  #F8B500;
+    width: fit-content !important;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.footer{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background:#444;
+    color:white;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+.inline{
+    display: inline-block;
+}
