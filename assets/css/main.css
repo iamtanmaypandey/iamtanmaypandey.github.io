@@ -270,3 +270,23 @@ h1,h2,h3,h4,h5,h6{
 .env-2{
     color:#ff4c67;
 }
+.education .education-box{
+    border-left: 5px solid #f8b500;
+    background: white;
+    display: flex;
+}
+.education .education-box .img{
+    flex: 0 0 20%;
+}
+.education .education-box .info{
+    flex: 0 0 70%;
+    color: black;
+}
+.education .education-box .info h1,
+.education .education-box .info h2,
+.education .education-box .info h3,
+.education .education-box .info h4,
+.education .education-box .info h5,
+.education .education-box .info h6{
+    color: black;
+}

@@ -1,4 +1,6 @@
 @media(min-width:993px){
-
+.dhide{
+    display: none;
+}
     
 }
