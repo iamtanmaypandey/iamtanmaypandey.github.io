@@ -85,10 +85,19 @@
     color: black;
 }
 .boxer{
-    max-width: 100%;
+    display: flex;
 }
 .boxer .half{
-    width:100%;
+    flex: 0 0 100%;
 }
 .boxer .half img{width:100px;}
+
+.project-icon{
+    font-size: 20px;
+    color:rgb(74, 0, 11);
+}
+.project-text{
+    font-size: 15px;
+}
+
 }

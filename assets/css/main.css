@@ -370,3 +370,11 @@ h6 {
     flex: 0 0 50%;
 }
 .boxer .half img{width:100px;}
+.project-icon{
+    font-size: 20px;
+    color:rgb(74, 0, 11);
+}
+.project-text{
+    font-size: 15px;
+}
+.education .education-box ul{border-left: 2px solid #F8B500;}
