@@ -8,6 +8,10 @@ body{
     font-family: 'Montserrat';
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+    color:inherit;
+}
 h1{
     font-size: 60px;
 }
@@ -29,6 +33,7 @@ h6{
 h1,h2,h3,h4,h5,h6{
     padding:0;
     margin: 0;
+    color: #f8b500;
 }
 .navigation{
     position: fixed;
@@ -39,6 +44,7 @@ h1,h2,h3,h4,h5,h6{
     width:80%;
     padding-top:10px;
     padding-bottom: 10px;
+    z-index: 99;
 }
 .navigation .menu{
     width:90%;
@@ -65,13 +71,14 @@ h1,h2,h3,h4,h5,h6{
 .road{
     position: fixed;
     bottom:0;
-    height:100px;
-    background-color: #444;
+    height:50px;
+    border:2px solid #444;
+    background-color: inherit;
     transform-style: preserve-3d;
     transform-origin: bottom;
     transform: perspective(500px) rotateX(30deg);
-    width:110%;
-    left:-10px;
+    width:calc(100% + 200px);
+    left:-70px;
 }
 .road:before{
     content:'';
@@ -84,14 +91,6 @@ h1,h2,h3,h4,h5,h6{
     background: linear-gradient(90deg, #fff 0%, #fff 60%, #444 60%, #444 100%);
     background-size: 110px;
     animation: animate 0.8s linear infinite;
-}
-@keyframes animate {
-    0%{
-        background-position: 0;
-    }
-    100%{
-        background-position: 110px;
-    }
 }
 
 .code{
@@ -157,4 +156,117 @@ h1,h2,h3,h4,h5,h6{
   
 .code .c{
     flex: 0 0 0.15em;
+}
+
+
+.codebox {
+    background-color: #222;
+    border-radius: 12px;
+    height:200px;
+    max-width: 50%;
+    box-shadow: 1px 3px 18px 0 rgba(#222, 0.5);
+    header {
+      padding: 12px 15px;
+      background-color: #444;
+      border-radius: 12px 12px 0 0;
+      line-height: 0;
+      span {
+        height: 16px;
+        width: 16px;
+        margin-right: 6px;
+        background-color: red;
+        border-radius: 50%;
+        display: inline-block;
+        &:nth-child(1) {
+          background-color: #ff5c5c;
+        }
+        &:nth-child(2) {
+          background-color: #ffbd4c;
+        }
+        &:nth-child(3) {
+          background-color: #00ca56;
+        }
+      }
+    }
+    main {
+        padding-top:50px;
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+  
+  
+  /* Contact info */
+  #linuus-contact {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: stretch;
+    background-color: #ccc;
+    overflow: hidden;
+    border-radius: 8px 0 0 0;
+  }
+  #linuus-contact a {
+    color: #333;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-family: sans-serif;
+    border-right: 1px solid #333;
+    text-decoration: none;
+  }
+  #linuus-contact a:last-child {
+    border-right: none;
+  }
+  #linuus-contact a:hover {
+    background: #bbb;
+  }
+
+  .img-codeblock{
+    transform: translateY(30px);
+    width: 100px;
+  }
+
+  .runner{
+    bottom:20px;
+    height: 100px;
+    position: fixed;
+    z-index: 10;
+  }
+
+
+.boxed{
+    display: flex;
+}
+.boxed .container{
+    flex: 0 0 calc(80% - 10px);
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.boxed .roads{
+    flex: 0 0 20%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.boxed .container div{
+    padding-top:10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+}
+.fa-cake-candles{
+    color:#ff5c5c
+}
+.env-1{
+    color:#734cff;
+}
+
+.env-2{
+    color:#ff4c67;
 }
