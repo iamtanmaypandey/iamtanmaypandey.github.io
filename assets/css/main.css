@@ -189,13 +189,26 @@ h6 {
 
 
 .codebox {
-    background-color: #222;
+    background-color: #F8B500;
     border-radius: 12px;
     height: 200px;
     max-width: 50%;
     box-shadow: 1px 3px 18px 0 rgba(#222, 0.5);
+    background:url('../images/programmer-doing-simulation-removebg-preview.png') 60%, #734cff 40%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 20px;
 }
-
+.tanmay{
+    padding-top:100px;
+    padding-bottom: 100px;
+    width: 100%;
+    background: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
 .codebox header {
     padding: 12px 15px;
     background-color: #444;
@@ -290,6 +303,11 @@ h6 {
     flex: 0 0 20%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    background-image: url('../images/forest-snow-capped-mountains.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 500px;
 }
 
 .boxed .container div {
@@ -336,3 +354,19 @@ h6 {
 .education .education-box .info h6 {
     color: black;
 }
+.projects h1,
+.projects h2,
+.projects h3,
+.projects h4,
+.projects h5,
+.projects h6 {
+    color: black;
+}
+.boxer{
+    display: flex;
+    max-width: 100%;
+}
+.boxer .half{
+    flex: 0 0 50%;
+}
+.boxer .half img{width:100px;}
