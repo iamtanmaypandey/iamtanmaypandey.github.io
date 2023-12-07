@@ -1,118 +1,141 @@
 :root {
     --glow-color: hsl(186 100% 69%);
 }
-body{
+
+body {
     margin: 0;
     background-color: #e3e3e3;
     color: rgb(26, 26, 26);
     font-family: 'Montserrat';
     overflow-x: hidden;
 }
-a{
+
+a {
     text-decoration: none;
-    color:inherit;
+    color: inherit;
 }
-h1{
+
+h1 {
     font-size: 60px;
 }
-h2{
+
+h2 {
     font-size: 56px;
 }
-h3{
+
+h3 {
     font-size: 48px;
 }
-h4{
+
+h4 {
     font-size: 40px;
 }
-h5{
+
+h5 {
     font-size: 32px;
 }
-h6{
+
+h6 {
     font-size: 26px;
 }
-h1,h2,h3,h4,h5,h6{
-    padding:0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
     margin: 0;
     color: #f8b500;
 }
-.navigation{
+
+.navigation {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     padding-left: 10%;
-    padding-right:10%;
-    width:80%;
-    padding-top:10px;
+    padding-right: 10%;
+    width: 80%;
+    padding-top: 10px;
     padding-bottom: 10px;
     z-index: 99;
 }
-.navigation .menu{
-    width:90%;
-    padding-left:5%;
+
+.navigation .menu {
+    width: 90%;
+    padding-left: 5%;
     padding-right: 5%;
     border-radius: 50px;
     background-color: white;
-    color:black;
-    padding-top:15px;
+    color: black;
+    padding-top: 15px;
     padding-bottom: 15px;
     font-size: 25px;
     font-weight: bold;
     display: flex;
 }
-.navigation .menu .blank{
+
+.navigation .menu .blank {
     flex: 0 0 20%;
 }
-.navigation .menu .logo{
+
+.navigation .menu .logo {
     flex: 0 0 60%;
 }
-.navigation .menu .bars{
+
+.navigation .menu .bars {
     flex: 0 0 20%;
 }
-.road{
+
+.road {
     position: fixed;
-    bottom:0;
-    height:50px;
-    border:2px solid #444;
+    bottom: 0;
+    height: 50px;
+    border: 2px solid #444;
     background-color: inherit;
     transform-style: preserve-3d;
     transform-origin: bottom;
     transform: perspective(500px) rotateX(30deg);
-    width:calc(100% + 200px);
-    left:-70px;
+    width: calc(100% + 200px);
+    left: -70px;
 }
-.road:before{
-    content:'';
+
+.road:before {
+    content: '';
     position: absolute;
-    top:50%;
+    top: 50%;
     transform: translateY(-50%);
-    left:0;
-    width:110%;
+    left: 0;
+    width: 110%;
     height: 5px;
     background: linear-gradient(90deg, #fff 0%, #fff 60%, #444 60%, #444 100%);
     background-size: 110px;
     animation: animate 0.8s linear infinite;
 }
 
-.code{
+.code {
     height: 200px;
-    width:70%;
+    width: 70%;
     padding-left: 5%;
     padding-right: 0%;
     border-radius: 20px;
-    color:#f8b500;
+    color: #f8b500;
     background: #100e1b;
     font-size: 25px;
     align-content: space-around;
     vertical-align: middle;
     display: flex;
 }
-.code .a{
+
+.code .a {
     flex: 0 0 80%;
-    padding-top:30px;
+    padding-top: 30px;
     padding-bottom: 30px;
     vertical-align: middle;
 }
-.code .b{
+
+.code .b {
     flex: 0 0 calc(20% - 0.15em);
     background-color: teal;
     border-radius: 20px;
@@ -121,40 +144,46 @@ h1,h2,h3,h4,h5,h6{
     color: var(--glow-color);
     border: 0.15em solid var(--glow-color);
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
-    0px 0px 0.5em 0px var(--glow-color);
-  animation: border-flicker 2s linear infinite;
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 2s linear infinite;
 }
-.code .b img{
+
+.code .b img {
     width: 100px;
-    padding-top:40px;
+    padding-top: 40px;
 }
+
 @keyframes border-flicker {
     0% {
-      opacity: 0.1;
+        opacity: 0.1;
     }
+
     2% {
-      opacity: 1;
+        opacity: 1;
     }
+
     4% {
-      opacity: 0.1;
+        opacity: 0.1;
     }
-  
+
     8% {
-      opacity: 1;
+        opacity: 1;
     }
+
     70% {
-      opacity: 0.7;
+        opacity: 0.7;
     }
+
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-.code .c{
+}
+
+.code .c {
     flex: 0 0 0.15em;
 }
 
@@ -162,43 +191,49 @@ h1,h2,h3,h4,h5,h6{
 .codebox {
     background-color: #222;
     border-radius: 12px;
-    height:200px;
+    height: 200px;
     max-width: 50%;
     box-shadow: 1px 3px 18px 0 rgba(#222, 0.5);
-    header {
-      padding: 12px 15px;
-      background-color: #444;
-      border-radius: 12px 12px 0 0;
-      line-height: 0;
-      span {
-        height: 16px;
-        width: 16px;
-        margin-right: 6px;
-        background-color: red;
-        border-radius: 50%;
-        display: inline-block;
-        &:nth-child(1) {
-          background-color: #ff5c5c;
-        }
-        &:nth-child(2) {
-          background-color: #ffbd4c;
-        }
-        &:nth-child(3) {
-          background-color: #00ca56;
-        }
-      }
-    }
-    main {
-        padding-top:50px;
-      color: #fff;
-      font-size: 18px;
-      line-height: 1.2;
-    }
-  }
-  
-  
-  /* Contact info */
-  #linuus-contact {
+}
+
+.codebox header {
+    padding: 12px 15px;
+    background-color: #444;
+    border-radius: 12px 12px 0 0;
+    line-height: 0;
+
+}
+
+.codebox header span {
+    height: 16px;
+    width: 16px;
+    margin-right: 6px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.codebox header span:nth-child(1) {
+    background-color: #ff5c5c;
+}
+
+.codebox header span:nth-child(2) {
+    background-color: #ffbd4c;
+}
+
+.codebox header span:nth-child(3) {
+    background-color: #00ca56;
+}
+
+.codebox main {
+    padding-top: 50px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+/* Contact info */
+#linuus-contact {
     position: fixed;
     z-index: 999;
     bottom: 0;
@@ -208,85 +243,96 @@ h1,h2,h3,h4,h5,h6{
     background-color: #ccc;
     overflow: hidden;
     border-radius: 8px 0 0 0;
-  }
-  #linuus-contact a {
+}
+
+#linuus-contact a {
     color: #333;
     padding: 8px 12px;
     font-size: 14px;
     font-family: sans-serif;
     border-right: 1px solid #333;
     text-decoration: none;
-  }
-  #linuus-contact a:last-child {
-    border-right: none;
-  }
-  #linuus-contact a:hover {
-    background: #bbb;
-  }
+}
 
-  .img-codeblock{
+#linuus-contact a:last-child {
+    border-right: none;
+}
+
+#linuus-contact a:hover {
+    background: #bbb;
+}
+
+.img-codeblock {
     transform: translateY(30px);
     width: 100px;
-  }
+}
 
-  .runner{
-    bottom:20px;
+.runner {
+    bottom: 20px;
     height: 100px;
     position: fixed;
     z-index: 10;
-  }
+}
 
 
-.boxed{
+.boxed {
     display: flex;
 }
-.boxed .container{
+
+.boxed .container {
     flex: 0 0 calc(80% - 10px);
     padding-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
 }
-.boxed .roads{
+
+.boxed .roads {
     flex: 0 0 20%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.boxed .container div{
-    padding-top:10px;
+.boxed .container div {
+    padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
     padding-left: 5%;
     padding-right: 5%;
     width: 90%;
 }
-.fa-cake-candles{
-    color:#ff5c5c
-}
-.env-1{
-    color:#734cff;
+
+.fa-cake-candles {
+    color: #ff5c5c
 }
 
-.env-2{
-    color:#ff4c67;
+.env-1 {
+    color: #734cff;
 }
-.education .education-box{
+
+.env-2 {
+    color: #ff4c67;
+}
+
+.education .education-box {
     border-left: 5px solid #f8b500;
     background: white;
     display: flex;
 }
-.education .education-box .img{
+
+.education .education-box .img {
     flex: 0 0 20%;
 }
-.education .education-box .info{
+
+.education .education-box .info {
     flex: 0 0 70%;
     color: black;
 }
+
 .education .education-box .info h1,
 .education .education-box .info h2,
 .education .education-box .info h3,
 .education .education-box .info h4,
 .education .education-box .info h5,
-.education .education-box .info h6{
+.education .education-box .info h6 {
     color: black;
 }
